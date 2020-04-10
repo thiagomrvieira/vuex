@@ -22,7 +22,12 @@ export default {
         }
     },
     methods: {
-        ...mapActions(['adicionarProduto']),
+        // ...mapActions(['adicionarProduto']),
+        
+        //mapeando actions para métodos 
+        adicionarProduto(produto){
+            this.$store.dispatch('adicionarProduto', produto)
+        },
 
         adicionar() {
             const produto = {
