@@ -30,12 +30,13 @@ export default {
         }
     },
     methods: {
-        // ...mapActions(['adicionarProduto']),
+        // usando o action do namespace 'carrinho'
+        ...mapActions('carrinho', ['adicionarProduto']),
         
         //mapeando actions para métodos 
-        adicionarProduto(produto){
-            this.$store.dispatch('adicionarProduto', produto)
-        },
+        // adicionarProduto(produto){
+        //     this.$store.dispatch('adicionarProduto', produto)
+        // },
 
         adicionar() {
             const produto = {
