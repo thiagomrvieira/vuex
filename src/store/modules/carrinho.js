@@ -18,6 +18,8 @@ export default {
             setTimeout(() => {
                 context.commit('adicionarProduto', payload)
             }, 1000);
+            
+
         }
     }
 }

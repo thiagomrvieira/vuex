@@ -58,6 +58,9 @@ export default {
             // outra opção
             // this.$store.dispatch('adicionarProduto', produto)
 
+            console.log(this.$store.getters.getNome)
+            console.log(this.$store.getters.getNomeCompleto)
+
         }
     }
 }
